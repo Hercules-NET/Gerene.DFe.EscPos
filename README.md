@@ -74,9 +74,11 @@ OpenAC.Net.Sat (desserialização do xml do SAT) - https://github.com/OpenAC-Net
 
 Change log:
 ----
+2.0.2 e 2.0.3 - Atualização de dependências
 2.0.1 - Atualiza a versão do Hercules corrigindo #17 (corresponde à versão legada 1.0.28)<br/>
 2.0.0 - Remove impressão do SAT, descontinuado pelo estado de SP (as versões 1.0.X continuarão sendo suportadas pela biblioteca).<br/>
 
+1.0.29 e 1.0.30 - Atualização de dependências
 1.0.28 - Corresponde à versão 2.0.1.<br/>
 1.0.27 - Se o cEAN for SEM GTIN, mesmo que esteja configurado para usar Barras como Código, utiliza o cProd<br/>
 1.0.26 - Adiciona a propriedade "PaginaCodigo" permitindo alterar a pagina de codigo da impressora<br/>
@@ -134,3 +136,13 @@ Agradecimentos:
 O projeto Vip.Printer (https://github.com/leandrovip/Vip.Printer) serviu de motor de impressão entre as versões 1.0.0 e 1.0.16 de forma gratuíta e com qualidade, permitindo o funcionamento dessa biblioteca por quase dois anos com um nível muito baixo de manutenção.
 
 Em busca de evolução a troca de motor foi necessária na versão 1.0.17. Essa mudança permitiu novos protocolos e o uma parceria ainda mais estreita com o grupo OpenAC que vem fazendo um trabalho incrível com diversos componentes para automação comercial. Conheça mais em: https://github.com/OpenAC-Net
+
+
+Doação:
+----
+
+Em 05/12/2024, nas versões 1.0.30 e 2.0.3, o projeto foi doado de @marcosgerene para o grupo Hercules-NET.
+
+
+
+
