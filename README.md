@@ -141,7 +141,7 @@ Em busca de evolução a troca de motor foi necessária na versão 1.0.17. Essa 
 Doação:
 ----
 
-Em 05/12/2024, nas versões 1.0.30 e 2.0.3, o projeto foi doado de @marcosgerene para o grupo Hercules-NET.
+Em 05/12/2025, nas versões 1.0.30 e 2.0.3, o projeto foi doado de @marcosgerene para o grupo Hercules-NET.
 
 
 
