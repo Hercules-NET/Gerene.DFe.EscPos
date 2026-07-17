@@ -226,10 +226,19 @@ namespace Gerene.DFe.EscPos
             #endregion
 
             #region Pagamentos
+
             foreach (var _pagto in _NFCe.NFe.infNFe.pag)
             {
                 foreach (var _detpagto in _pagto.detPag)
-                    _Printer.ImprimirTexto(GereneHelpers.TextoEsquerda_Direita(_detpagto.tPag.Descricao(), _detpagto.vPag.ToString("C2", Cultura), ColunasCondensado).TratarAcento(), OpenTamanhoFonte.Condensada);
+                {
+                    string descricao = _detpagto.tPag.Descricao();
+
+                    if (_detpagto.tPag == NFe.Classes.Informacoes.Pagamento.FormaPagamento.fpOutro &&
+                        !string.IsNullOrEmpty(_detpagto.xPag))
+                        descricao = _detpagto.xPag;
+
+                    _Printer.ImprimirTexto(GereneHelpers.TextoEsquerda_Direita(descricao, _detpagto.vPag.ToString("C2", Cultura), ColunasCondensado).TratarAcento(), OpenTamanhoFonte.Condensada);
+                }
 
                 if (_pagto.vTroco.HasValue && _pagto.vTroco.Value > 0)
                     _Printer.ImprimirTexto(GereneHelpers.TextoEsquerda_Direita("Troco:", _pagto.vTroco.Value.ToString("C2", Cultura).TratarAcento(), ColunasNormal));
