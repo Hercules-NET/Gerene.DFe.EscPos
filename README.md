@@ -80,7 +80,11 @@ Change log:
 2.0.1 - Atualiza a versão do Hercules corrigindo #17 (corresponde à versão legada 1.0.28)<br/>
 2.0.0 - Remove impressão do SAT, descontinuado pelo estado de SP (as versões 1.0.X continuarão sendo suportadas pela biblioteca).<br/>
 
-1.0.29 e 1.0.30 - Atualização de dependências
+1.0.32 - Corrige desconto duplicado nos totais, grafia de "Acréscimos", mensagem da validação de 58mm e versão lida do XML no QRCodeTexto (NFCe)<br/>
+1.0.31 - Permite usar o xPag para descrição do pagamento quando o tPag for referente a outros (NFCe)<br/>
+1.0.30 - Atualiza dependencias permitindo RTC<br/>
+1.0.29 - Atualiza dependência do Hercules, corrigindo problemas na serialização do XML<br/>
+1.0.28 - Atualiza a versão do Hercules corrigindo #17<br/>
 1.0.28 - Corresponde à versão 2.0.1.<br/>
 1.0.27 - Se o cEAN for SEM GTIN, mesmo que esteja configurado para usar Barras como Código, utiliza o cProd<br/>
 1.0.26 - Adiciona a propriedade "PaginaCodigo" permitindo alterar a pagina de codigo da impressora<br/>
