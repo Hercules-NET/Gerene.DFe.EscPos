@@ -75,6 +75,7 @@ Hercules.NET (ZeusFiscal) (desserialização do xml da NFCe) - [https://github.c
 
 Change log:
 ----
+1.0.32 - Corrige desconto duplicado nos totais, grafia de "Acréscimos", mensagem da validação de 58mm e versão lida do XML no QRCodeTexto (NFCe)<br/>
 1.0.31 - Permite usar o xPag para descrição do pagamento quando o tPag for referente a outros (NFCe)<br/>
 1.0.30 - Atualiza dependencias permitindo RTC<br/>
 1.0.29 - Atualiza dependência do Hercules, corrigindo problemas na serialização do XML<br/>
