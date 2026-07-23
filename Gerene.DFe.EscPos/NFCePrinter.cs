@@ -56,7 +56,7 @@ namespace Gerene.DFe.EscPos
                     protNFe = new NFe.Classes.Protocolo.protNFe()
                 };
 
-                nota.versao = _NFCe.NFe.infNFe.versao;
+                nota.versao = nota.NFe.infNFe.versao;
             }
 
             return QRCodeTexto(nota);
@@ -189,7 +189,7 @@ namespace Gerene.DFe.EscPos
                     _Printer.ImprimirTexto(det.prod.xProd.LimitarString(ColunasCondensado).TratarAcento(), OpenTamanhoFonte.Condensada);
 
                 if (det.prod.vOutro.HasValue && det.prod.vOutro.Value > 0)
-                    _Printer.ImprimirTexto(GereneHelpers.TextoEsquerda_Direita("AcrÉscimos:", det.prod.vOutro.Value.ToString("C2", Cultura), ColunasCondensado).TratarAcento(), OpenTamanhoFonte.Condensada);
+                    _Printer.ImprimirTexto(GereneHelpers.TextoEsquerda_Direita("Acréscimos:", det.prod.vOutro.Value.ToString("C2", Cultura), ColunasCondensado).TratarAcento(), OpenTamanhoFonte.Condensada);
 
                 if (det.prod.vDesc.HasValue && det.prod.vDesc.Value > 0)
                     _Printer.ImprimirTexto(GereneHelpers.TextoEsquerda_Direita("Descontos:", det.prod.vDesc.Value.ToString("C2", Cultura), ColunasCondensado).TratarAcento(), OpenTamanhoFonte.Condensada);
@@ -203,7 +203,7 @@ namespace Gerene.DFe.EscPos
             _Printer.ImprimirTexto(GereneHelpers.TextoEsquerda_Direita("Subtotal:", _NFCe.NFe.infNFe.total.ICMSTot.vProd.ToString("C2", Cultura), ColunasCondensado), OpenTamanhoFonte.Condensada);
 
             if (_NFCe.NFe.infNFe.total.ICMSTot.vOutro > 0)
-                _Printer.ImprimirTexto(GereneHelpers.TextoEsquerda_Direita("Acrescimos:", _NFCe.NFe.infNFe.total.ICMSTot.vOutro.ToString("C2", Cultura), ColunasCondensado), OpenTamanhoFonte.Condensada);
+                _Printer.ImprimirTexto(GereneHelpers.TextoEsquerda_Direita("Acréscimos:", _NFCe.NFe.infNFe.total.ICMSTot.vOutro.ToString("C2", Cultura), ColunasCondensado).TratarAcento(), OpenTamanhoFonte.Condensada);
 
             if (_NFCe.NFe.infNFe.total.ICMSTot.vDesc > 0)
                 _Printer.ImprimirTexto(GereneHelpers.TextoEsquerda_Direita("Descontos:", _NFCe.NFe.infNFe.total.ICMSTot.vDesc.ToString("C2", Cultura), ColunasCondensado), OpenTamanhoFonte.Condensada);
@@ -213,9 +213,6 @@ namespace Gerene.DFe.EscPos
 
             if (_NFCe.NFe.infNFe.total.ICMSTot.vSeg > 0)
                 _Printer.ImprimirTexto(GereneHelpers.TextoEsquerda_Direita("Seguro:", _NFCe.NFe.infNFe.total.ICMSTot.vSeg.ToString("C2", Cultura), ColunasCondensado), OpenTamanhoFonte.Condensada);
-
-            if (_NFCe.NFe.infNFe.total.ICMSTot.vDesc > 0)
-                _Printer.ImprimirTexto(GereneHelpers.TextoEsquerda_Direita("Descontos:", _NFCe.NFe.infNFe.total.ICMSTot.vDesc.ToString("C2", Cultura), ColunasCondensado), OpenTamanhoFonte.Condensada);
 
             _Printer.ImprimirTexto(GereneHelpers.TextoEsquerda_Direita("Valor TOTAL:", _NFCe.NFe.infNFe.total.ICMSTot.vNF.ToString("C2", Cultura), ColunasNormal), OpenEstiloFonte.Negrito);
             #endregion

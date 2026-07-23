@@ -233,7 +233,7 @@ namespace Gerene.DFe.EscPos
             if (TipoPapel == TipoPapel.Tp58mm)
             {
                 if (!ProdutoDuasLinhas)
-                    throw new ArgumentException("Não é possível usar produto em duas linhas para 58mm");
+                    throw new ArgumentException("É necessário usar produto em duas linhas para 58mm");
 
                 if (QrCodeLateral)
                     throw new ArgumentException("Não é possível usar QRCode lateral para 58mm");

@@ -74,6 +74,8 @@ OpenAC.Net.Sat (desserialização do xml do SAT) - https://github.com/OpenAC-Net
 
 Change log:
 ----
+2.0.5 - Corrige desconto duplicado nos totais, grafia de "Acréscimos", mensagem da validação de 58mm e versão lida do XML no QRCodeTexto<br/>
+2.0.4 - Imprime o xPag como descrição do pagamento quando o tPag for "Outros"<br/>
 2.0.2 e 2.0.3 - Atualização de dependências
 2.0.1 - Atualiza a versão do Hercules corrigindo #17 (corresponde à versão legada 1.0.28)<br/>
 2.0.0 - Remove impressão do SAT, descontinuado pelo estado de SP (as versões 1.0.X continuarão sendo suportadas pela biblioteca).<br/>
